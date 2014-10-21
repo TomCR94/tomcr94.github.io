@@ -1,6 +1,12 @@
 jQuery(document).ready(function ($) {
 
-
+$('#tmo-short-btn').click(function() {
+        $('.tmo-url').toggle("slide", {
+            direction: "left"
+        }, "fast", function() {
+        });
+      
+    });
   
 	var slideCount = $('#slider ul li').length;
 	var slideWidth = $('#slider ul li').width();
