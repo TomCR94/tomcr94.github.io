@@ -15,6 +15,16 @@ html, body {
   font-family: 'Open Sans';
 }
 
+figure {
+    width: 200px; height: 200px;
+    position: relative;  /* Permits placement figcaption absolutely */
+}
+
+figcaption {
+    position: center;
+    bottom: 0; left: 0; width: 100%;
+    /*background: rgba(0,0,0,.8); /* Semi-transparent background */
+}
 
 h1 {
   color: #fff;
