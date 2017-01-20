@@ -451,10 +451,10 @@ figure{
 .widget > .photo
 {
   position: absolute;
-  top: 10px;
-  left: 16.67%;
-  width: 200px;
-  height: 100px;
+  top: 5px;
+  left: 2%;
+  width: 291px;
+  height: 192px;
   border-radius: 0%;
 }
 
