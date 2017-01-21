@@ -164,38 +164,6 @@ a:hover {
 {% endif %}
 
 //
-// HomeBar
-//
-
-.HomeBar {
-  text-align: center;
-}
-
-.HomeBar-links {
-  padding-left: 0;
-  margin-top: 15px;
-  margin-left: -5px;
-  list-style: none;
-}
-
-.HomeBar-links li {
-  display: inline-block;
-  margin: 12px;
-}
-
-{% if site.social_link_color %}
-.HomeBar-links a {
-  color: {{ site.social_link_color }};
-}
-
-.HomeBar-links a:focus,
-.HomeBar-links a:hover {
-  color: darken({{ site.social_link_color }}, 30%);
-}
-{% endif %}
-
-
-//
 // Device
 //
 
