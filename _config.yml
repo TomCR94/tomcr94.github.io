@@ -26,28 +26,7 @@ app:
 # Marketing
 #
 marketing_header: Create your own Vlogging Empire # Optional
-marketing_desc: Take the helm of your very own vlogging channel in this casual clicker style game.
-
-EARN
-&#8226;&#8195;Start off with a simple vlogging channel to earn your fortune
-&#8226;&#8195;Invest in aspects of your channel to earn more; Camera, Editing, Promotion etc.
-&#8226;&#8195;Boost your income for a short time by taking a chance; Your earnings could double or quadruple
-
-EXPAND
-&#8226;&#8195;Invest in new Channels with different topics; Food, Gaming, Travel etc.
-&#8226;&#8195;Name each Channel whatever you want to reflect your uniqueness
-&#8226;&#8195;Watch your income soar, even as you're not in game
-
-EMPLOY
-&#8226;&#8195;Boost your profits by employing in game characters
-  &#8226;The Ant, an average worker who will boost your profits, but only from 9 to 5
-  &#8226;The Zombie, a slow worker who will work day and night to boost your profits marginally
-  &#8226;The Director, these workers take charge and increase your boost from Ant workers
-&#8226;&#8195;Find unique characters who will bring a new perk to your Empire
-  &#8226;Esther Bunny, a little old lady who randomly leaves presents around the office
-  &#8226;D. Drump, a narcissist with a penchant for social media
-  &#8226;H. Klintun, adverse reaction to emails, looking for a new career
-#
+marketing_desc: Take the helm of your very own vlogging channel in this casual clicker style game. Earn your fortune as a professional Vlogger, Expand the range and content of your channels, Employ various interesting characters to enhance your Empire. 
 # Homebar Links
 #
 # Includes an icon for each homebar item
