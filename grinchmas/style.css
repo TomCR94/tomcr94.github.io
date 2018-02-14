@@ -67,7 +67,7 @@ body{
   left: 35%;
   font-size: 20em;
   color: #fff;
-  content: "\f1bb";
+  /*content: "\f1bb";*/
   font-family: FontAwesome;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
