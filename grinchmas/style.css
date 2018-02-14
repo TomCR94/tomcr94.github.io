@@ -212,12 +212,12 @@ body{
     }
 }
 
-#heartContainer {
+#snowflakeContainer {
     position: absolute;
     left: 0px;
     top: 0px;
 }
-.heart {
+.snowflake {
     padding-left: 15px;
     font-family: Cambria, Georgia, serif;
     font-size: 14px;
@@ -227,7 +227,7 @@ body{
     user-select: none;
     z-index: 1000;
 }
-.heart:hover {
+.snowflake:hover {
     cursor: default;
 }
 
