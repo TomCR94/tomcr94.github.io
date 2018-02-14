@@ -219,11 +219,10 @@ body{
 }
 .snowflake {
     padding-left: 15px;
-    font-family: Cambria, Georgia, serif;
     font-size: 14px;
     line-height: 24px;
     position: fixed;
-    color: #A5F2F3;
+    color: #FF00FF;
     user-select: none;
     z-index: 1000;
 }
