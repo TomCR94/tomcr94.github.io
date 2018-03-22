@@ -166,7 +166,7 @@ div#sea {
 .icons {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 35%;
     height: auto;
     transform: translateY(10px) rotate(-20deg);
 }
@@ -175,7 +175,7 @@ div#sea {
   text-align: center;
 }
 .icons .row span {
-  color: #ded12561;
+  color: #ded125;
   text-shadow: 4px 4px 0 rgba(96, 125, 139, 0.4);
   font-size: 75px;
   display: inline-block;
@@ -422,12 +422,6 @@ div#sea {
   top: 60px;
   right: 25px;
 }
-
-@media (min-width: 1000px) {
-  .icons {
-    left: 30px;
-  }
-
   .icons .row span {
     font-size: 56px;
   }
