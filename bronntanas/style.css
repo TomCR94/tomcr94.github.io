@@ -175,7 +175,7 @@ div#sea {
   text-align: center;
 }
 .icons .row span {
-  color: #ded125;
+  color: #ded12561;
   text-shadow: 4px 4px 0 rgba(96, 125, 139, 0.4);
   font-size: 75px;
   display: inline-block;
@@ -363,7 +363,7 @@ div#sea {
 
 .step-4 .icons .row span, .step-3 .icons .row span {
   /*animation: wobble 0.6s linear infinite forwards;*/
-  color: #c6e2ff;
+  color: #ded125;
   animation: neon .08s ease-in-out infinite alternate;
 }
 
