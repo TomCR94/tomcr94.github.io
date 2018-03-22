@@ -76,10 +76,10 @@ div#sea {
 
 .giftbox {
   position: absolute;
-  width: 600px;
-  height: 400px;
+  width: 65%;
+  padding-bottom: 33%;
   left: 50%;
-  margin-left: -300px;
+  margin-left: -32%;
   bottom: 40px;
   z-index: 10;
 }
@@ -99,7 +99,7 @@ div#sea {
   content: "Click Me!";
   left: 0;
   bottom: 0;
-  font-size: 42px;
+  font-size: 52px;
   text-align: center;
   transform: rotate(-20deg);
   transform-origin: 0 0;
