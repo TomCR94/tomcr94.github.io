@@ -20,7 +20,7 @@ function diff_years(dt2, dt1)
  {
 
   var diff =(dt2.getTime() - dt1.getTime()) / 1000;
-  return Math.abs(Math.ceil(diff/ (60 * 60 * 24 * 365.25)));
+  return Math.abs(Math.floor(diff/ (60 * 60 * 24 * 365.25)));
    
  }
 
