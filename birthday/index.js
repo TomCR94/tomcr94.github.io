@@ -1,4 +1,4 @@
-var startDate = new Date("Mar 24, 1993");
+var startDate = new Date("Sep 23, 1966");
 // 
 var timer = setInterval(function() {
 
