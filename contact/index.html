@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>
-    About - DevOps over Ice
+    Contact - DevOps over Ice
     
   </title>
 
@@ -21,7 +21,7 @@
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="shortcut icon" type="image/png" href="/favicon.png">
-  <link rel="canonical" href="https://leacoighear.com/about/">
+  <link rel="canonical" href="https://leacoighear.com/contact/">
   <link rel="alternate" type="application/rss+xml" title="DevOps over Ice" href="/feed.xml">
 
 </head>
@@ -66,9 +66,9 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>About</h1>
+            <h1>Contact</h1>
             
-            <span class="subheading">This is who I am</span>
+            <span class="subheading">This is how we talk</span>
             
           </div>
         </div>
@@ -80,9 +80,7 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
 
-        <p>I’m an experienced DevOps Engineer with a demonstrated history of developing Automation Testing, CICD and DevOps solutions for enterprise software. Skilled in Azure DevOps, AWS, Terraform, Pipeline Management and Scripting, with Web development experience for CICD visibility tools and oversight. Previous experience in Automation Testing, Container technologies, Selenium, Cypress and C#. Strong engineering professional. Graduated from the University of Limerick. Currently working in a regulated healthcare software company.</p>
-
-<p>I enjoy a challenge and always look for the opportunity to extend my knowledge into new areas and technologies. And hope this blog will give me a chance to share some things I’ve learned</p>
+        <p>Want to get in touch? Ping me on any of the Socials linked below!</p>
 
 
       </div>
@@ -159,6 +157,83 @@
 
 <script src="/assets/scripts.js"></script>
 
+
+  <!-- Form Validation -->
+  <script src="/assets/vendor/startbootstrap-clean-blog/js/jqBootstrapValidation.js"></script>
+  <!-- Send Form -->
+  <script>
+    $(function () {
+
+      $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
+        preventSubmit: true,
+        submitError: function ($form, event, errors) {
+          // additional error messages or events
+        },
+        submitSuccess: function ($form, event) {
+          event.preventDefault(); // prevent default submit behaviour
+          // get values from FORM
+          var name = $("input#name").val();
+          var email = $("input#email").val();
+          var phone = $("input#phone").val();
+          var message = $("textarea#message").val();
+          var firstName = name; // For Success/Failure Message
+          // Check for white space in name for Success/Fail message
+          if (firstName.indexOf(' ') >= 0) {
+            firstName = name.split(' ').slice(0, -1).join(' ');
+          }
+          $this = $("#sendMessageButton");
+          $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
+          $.ajax({
+            url: "//formspree.io/leacoighear@gmail.com",
+            type: "POST",
+            data: {
+              name: name,
+              phone: phone,
+              email: email,
+              message: message
+            },
+            cache: false,
+            success: function () {
+              // Success message
+              $('#success').html("<div class='alert alert-success'>");
+              $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
+              $('#success > .alert-success').append("<strong>Your message has been sent. </strong>");
+              $('#success > .alert-success').append('</div>');
+              //clear all fields
+              $('#contactForm').trigger("reset");
+            },
+            error: function () {
+              // Fail message
+              $('#success').html("<div class='alert alert-danger'>");
+              $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
+              $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
+              $('#success > .alert-danger').append('</div>');
+              //clear all fields
+              $('#contactForm').trigger("reset");
+            },
+            complete: function () {
+              setTimeout(function () {
+                $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
+              }, 1000);
+            }
+          });
+        },
+        filter: function () {
+          return $(this).is(":visible");
+        }
+      });
+
+      $("a[data-toggle=\"tab\"]").click(function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+      });
+    });
+
+    /*When clicking on Full hide fail/success boxes */
+    $('#name').focus(function () {
+      $('#success').html('');
+    });
+  </script>
 
 
 
